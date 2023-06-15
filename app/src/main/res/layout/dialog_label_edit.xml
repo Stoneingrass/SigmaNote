@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    app:backgroundInsetTop="30dp"
+    app:backgroundInsetBottom="30dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="vertical"
+        >
+
+        <!-- The dialog is unusable in landscape mode
+             with keyboard shown, but there's not much to do about it. -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/label_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/label_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Label text"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:nextFocusDown="@android:id/button1"
+                android:textDirection="anyRtl"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/label_hidden_chk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_hidden_option"
+            android:textAlignment="viewStart"
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_notification"
+    app:startDestination="@id/fragment_notification"
+    >
+
+    <fragment
+        android:id="@+id/fragment_notification"
+        android:name="com.sigmanote.notes.ui.notification.NotificationFragment"
+        >
+        <action
+            android:id="@+id/action_reminder_postpone_date"
+            app:destination="@id/dialog_reminder_postpone_date"
+            />
+        <action
+            android:id="@+id/action_reminder_postpone_time"
+            app:destination="@id/dialog_reminder_postpone_time"
+            />
+    </fragment>
+
+    <dialog
+        android:id="@+id/dialog_reminder_postpone_date"
+        android:name="com.sigmanote.notes.ui.notification.ReminderPostponeDateDialog"
+        >
+        <argument
+            android:name="date"
+            app:argType="long"
+            />
+    </dialog>
+
+    <dialog
+        android:id="@+id/dialog_reminder_postpone_time"
+        android:name="com.sigmanote.notes.ui.notification.ReminderPostponeTimeDialog"
+        >
+        <argument
+            android:name="date"
+            app:argType="long"
+            />
+    </dialog>
+
+</navigation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shortcuts
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="25"
+    >
+
+    <shortcut
+        android:shortcutId="create_text_note"
+        android:shortcutLongLabel="@string/shortcut_text_note"
+        android:shortcutShortLabel="@string/shortcut_text_note_short"
+        android:icon="@drawable/ic_shortcut_text"
+        android:enabled="true"
+        >
+        <intent
+            android:action="com.sigmanote.notes.CREATE"
+            android:targetClass="com.sigmanote.notes.ui.main.MainActivity"
+            android:targetPackage="com.sigmanote.notes.sync"
+            >
+            <extra
+                android:name="com.sigmanote.notes.NOTE_TYPE"
+                android:value="0"
+                />
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="create_list_note"
+        android:shortcutLongLabel="@string/shortcut_list_note"
+        android:shortcutShortLabel="@string/shortcut_list_note_short"
+        android:icon="@drawable/ic_shortcut_list"
+        android:enabled="true"
+        >
+        <intent
+            android:action="com.sigmanote.notes.CREATE"
+            android:targetClass="com.sigmanote.notes.ui.main.MainActivity"
+            android:targetPackage="com.sigmanote.notes.sync"
+            >
+            <extra
+                android:name="com.sigmanote.notes.NOTE_TYPE"
+                android:value="1"
+                />
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="show_reminders"
+        android:shortcutLongLabel="@string/shortcut_reminders"
+        android:shortcutShortLabel="@string/shortcut_reminders_short"
+        android:icon="@drawable/ic_shortcut_alarm"
+        android:enabled="true"
+        >
+        <intent
+            android:action="com.sigmanote.notes.SHOW_REMINDERS"
+            android:targetClass="com.sigmanote.notes.ui.main.MainActivity"
+            android:targetPackage="com.sigmanote.notes.sync"
+            />
+    </shortcut>
+
+</shortcuts>

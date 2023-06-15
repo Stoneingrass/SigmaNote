@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="action_extra" translatable="false">Do extra action</string>
+
+    <string name="view_source_url" translatable="false">https://github.com/Stoneingrass</string>
+
+</resources>

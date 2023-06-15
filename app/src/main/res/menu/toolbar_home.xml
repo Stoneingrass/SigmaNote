@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/item_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/action_search"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/item_layout"
+        android:icon="@null"
+        android:title="@null"
+        app:showAsAction="ifRoom"
+        tools:icon="@drawable/ic_view_grid"
+        tools:title="@string/action_layout_grid"
+        />
+
+    <item
+        android:id="@+id/item_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort_title"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/item_empty_trash"
+        android:title="@string/action_empty_trash"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item_extra_action"
+        android:title="@string/action_extra"
+        app:showAsAction="never"
+        />
+
+</menu>

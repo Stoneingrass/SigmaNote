@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_vertical"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_information"
+        android:tintMode="src_in"
+        tools:ignore="ContentDescription"
+        app:tint="@color/material_on_background_emphasis_medium"
+        />
+
+    <TextView
+        android:id="@+id/message_txv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/material_on_background_emphasis_medium"
+        tools:text="@string/trash_reminder_message"
+        />
+
+    <ImageView
+        android:id="@+id/close_imv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_weight="0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="center_vertical"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_close"
+        android:tintMode="src_in"
+        tools:ignore="ContentDescription"
+        app:tint="@color/material_on_background_emphasis_medium"
+        />
+
+</LinearLayout>
